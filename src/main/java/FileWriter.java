@@ -14,7 +14,12 @@ public class FileWriter {
 	private static final Logger LOG = Logger.getLogger(FileWriter.class.getSimpleName());
 
 	public static synchronized void addToFileFolder(String fileName, String html) {
-		Path path = Paths.get("C:/SWF_Data/Crawled_Files/crawlerExample");
+//		For Ubuntu
+		Path path = Paths.get("/home/SWF_Data/Crawled_Files/crawlerExample");
+
+//		For Windows
+//		Path path = Paths.get("C:/SWF_Data/Crawled_Files/crawlerExample");
+
 		addToFolder(fileName, html, path);
 	}
 	private static void addToFolder(String fileName, String html, Path path) {

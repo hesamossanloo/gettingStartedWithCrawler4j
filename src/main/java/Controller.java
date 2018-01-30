@@ -9,7 +9,11 @@ import edu.uci.ics.crawler4j.robotstxt.RobotstxtServer;
  */
 public class Controller {
 	public static void main(String[] args) throws Exception {
-		String crawlStorageFolder = "C:\\SWF_Data\\Crawled_Files\\crawlerExample";
+//		For Ubuntu
+		String crawlStorageFolder = "/home/SWF_Data/Crawled_Files/crawlerExample";
+
+//		For Win
+//		String crawlStorageFolder = "C:\\SWF_Data\\Crawled_Files\\crawlerExample";
 		int numberOfCrawlers = 4;
 
 		CrawlConfig config = new CrawlConfig();
@@ -32,9 +36,9 @@ public class Controller {
          * which are found in these pages
          */
 //		controller.addSeed("https://alternativeto.net/");
-//		controller.addSeed("https://sourceforge.net/");
 		controller.addSeed("https://sourceforge.net/directory/");
 //		controller.addSeed("https://sourceforge.net/directory/?page_4000");
+//		Apache has delivers the projects list with AJAX which is not supported in crawler4j
 //		controller.addSeed("https://projects.apache.org/projects.html");
 
         /*
