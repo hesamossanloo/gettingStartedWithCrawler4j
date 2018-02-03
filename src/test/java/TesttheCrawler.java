@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 /**
  * Created by hesam.ossanloo on 24.01.2018.
  */
-public class TesttheCrawler {
+public class TestTheCrawler {
 
 	@Test
 	public void writeToFileTest(){
