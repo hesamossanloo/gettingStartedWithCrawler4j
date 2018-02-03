@@ -38,7 +38,7 @@ public class Controller {
 //		controller.addSeed("https://alternativeto.net/");
 		controller.addSeed("https://sourceforge.net/directory/");
 //		controller.addSeed("https://sourceforge.net/directory/?page_4000");
-//		Apache has delivers the projects list with AJAX which is not supported in crawler4j
+//		Apache delivers the projects list with AJAX which is not supported in crawler4j
 //		controller.addSeed("https://projects.apache.org/projects.html");
 
         /*
